@@ -10,14 +10,13 @@ import {
 import type { DatePickerProps } from 'antd'
 import { SmileFilled } from '@ant-design/icons'
 import Link from 'next/link'
+import Home from './Home'
+import MyButtons from './Home/MyButtons'
 
 const FormItem = Form.Item
 
-const content = {
-  marginTop: '100px',
-}
 
-export default function Home() {
+export default function App() {
   const onDatePickerChange: DatePickerProps['onChange'] = (
     date,
     dateString
@@ -26,17 +25,8 @@ export default function Home() {
   }
 
   return (
-    <div style={content}>
-      <div className="text-center mb-5">
-        <Link href="#" className="logo mr-0">
-          <SmileFilled style={{ fontSize: 48 }} />
-        </Link>
-
-        <p className="mb-0 mt-3 text-disabled">Welcome to the world !</p>
-      </div>
-      <div>
-        <Button>整合antd</Button>
-      </div>
+    <div>
+      <Home />
     </div>
   )
 }
