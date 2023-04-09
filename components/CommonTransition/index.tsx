@@ -1,8 +1,8 @@
 import cls from 'classnames';
 import React, { FC, useState } from 'react';
-import { ITransitionProps } from './type';
+// import { ITransitionProps } from './type';
 
-const CommonTransition: React.FC<ITransitionProps> = (props) => {
+const CommonTransition: React.FC = (props) => {
   // const { classNames, children, animation, ...restProps } = props;
 
   // return (
