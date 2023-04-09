@@ -28,7 +28,7 @@ export interface IMenuContext {
 }
 
 export interface ISubMenuProps {
-  index: string;
+  index?: string;
   title: string;
   className?: string;
   children?: any;
