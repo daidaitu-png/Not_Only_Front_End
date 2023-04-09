@@ -36,3 +36,16 @@ https://github.com/vercel/next.js/tree/canary/examples/with-ant-design
 # 字体icon
 https://fontawesome.com/v5/docs/web/use-with/react
 npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome  
+
+
+动画
+npm i react-transition-group --save
+npm i @types/react-transition-group --save
+
+animate.css
+
+在线mock请求
+jsonplaceholder.typpicode.com
+json server
+mocky.io
+vscode http插件

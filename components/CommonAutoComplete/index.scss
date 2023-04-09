@@ -1,0 +1,18 @@
+
+@import '../../styles/input-var.scss';
+@import '../../styles/menu-var.scss';
+
+
+.suggestion-item {
+  padding: $menu-item-padding-y $menu-item-padding-x;
+  cursor: pointer;
+  transition: $menu-transition;
+  color: $body-color;
+  &.is-active {
+    background: $menu-item-active-color !important;
+    color: $white !important;
+  }
+  &:hover {
+    color: $menu-item-active-color !important;
+  }
+}

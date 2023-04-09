@@ -1,0 +1,53 @@
+@import '../../styles/input-var.scss';
+
+// Progress bars
+
+$progress-font-size:                $font-size-base * .75 !default;
+$progress-bg:                       $gray-200 !default;
+$progress-border-radius:            $border-radius !default;
+$progress-bar-color:                $white !default;
+$progress-bar-transition:           width .6s ease !default;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+.progress-bar {
+  width: 100%;
+  box-sizing: border-box;
+  .progress-bar-outer {
+    border-radius: $progress-border-radius;
+    background-color: $progress-bg;
+    overflow: hidden;
+    position: relative;
+  }
+  .progress-bar-inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    border-radius: $progress-border-radius;
+    line-height: 1;
+    transition: $progress-bar-transition;
+    .inner-text {
+      color: $progress-bar-color;
+      font-size: $progress-font-size;
+      margin: 0 5px;  
+    }
+  }
+  @each $key, $val in $theme-colors {
+    .color-#{$key} {
+      background-color: $val;
+    }
+  }
+}
