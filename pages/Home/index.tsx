@@ -22,7 +22,7 @@ function Home() {
       <div style={{marginTop: 20}}>
         <MyMenus/>
       </div>
-      <MyIcons />
+      {/* <MyIcons /> */}
       <MyThemeText />
       <MyInputs />
       {/* <FontAwesomeIcon icon={faCoffee} size='lg' /> */}
