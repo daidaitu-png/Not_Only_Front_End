@@ -14,6 +14,7 @@ export interface IMenuItemProps {
   disabled?: boolean;
   className?: string;
   style?: React.CSSProperties;
+  children?: any;
 }
 
 type SelectCallback = (selectedIndex: string) => void;
