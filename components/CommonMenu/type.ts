@@ -7,6 +7,7 @@ export interface IMenuProps {
   style?: React.CSSProperties;
   onSelect?:  (selectedIndex: string) => void;
   defaultOpenSubMenus?: string[];
+  children?: any;
 }
 
 export interface IMenuItemProps {
