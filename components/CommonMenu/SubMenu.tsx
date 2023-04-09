@@ -17,7 +17,7 @@ const SubMenu: FC<ISubMenuProps> = ({
   });
   const handleClick = (e: MouseEvent) => {
     e.preventDefault();
-    context.onSelect && context.onSelect(index);
+    context.onSelect && index && context.onSelect(index);
     setOpen(!menuOpen);
   }
   let timer: any;
